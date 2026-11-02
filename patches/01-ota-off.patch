@@ -1,0 +1,9 @@
+--- a/firmware/src/version.h	2026-11-02 23:47:43.470394008 +0000
++++ b/firmware/src/version.h	2026-11-02 23:47:43.909779552 +0000
+@@ -19,5 +19,5 @@
+ #ifdef CARTE_IMPRIMEE
+ #define MAJ_SOURCE_DEFAUT "https://maj.marelleo.org/marelleo.json"
+ #else
+-#define MAJ_SOURCE_DEFAUT "https://maj.marelleo.org/marelleo-proto.json"
++#define MAJ_SOURCE_DEFAUT ""   // storybox: OTA disabled, box never fetches code from a third party
+ #endif

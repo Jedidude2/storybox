@@ -1,0 +1,11 @@
+--- a/firmware/src/main.cpp	2026-11-02 23:47:43.899990540 +0000
++++ b/firmware/src/main.cpp	2026-11-02 23:47:43.912194485 +0000
+@@ -119,7 +119,7 @@
+ constexpr bool     TRACE_POT = false;
+ constexpr uint32_t POLL_MS = 250;
+ constexpr uint8_t  MISSES_BEFORE_REMOVED = 3;
+-constexpr uint8_t  VOLUME_MIN = 3, VOLUME_MAX = 21;  // 21 = plafond de la lib (gain unite)
++constexpr uint8_t  VOLUME_MIN = 3, VOLUME_MAX = 13;  // storybox: toddler cap, lib max is 21. Measure under 75 dBA at 30 cm and adjust
+ 
+ void modeCharge(bool materielDemarre);   // defini plus bas, appele des le demarrage
+ void verrou(bool tenu);
